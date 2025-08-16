@@ -1,4 +1,4 @@
-# Customer Purchase Analytics Visualization
+# hq-seaborn-data-visualization
 
 This repository contains a professional Seaborn boxplot visualization showing purchase amount distributions across customer segments.
 
