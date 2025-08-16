@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/beige.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+
+  <style>
+    /* Custom styling */
+    .metric {
+      font-size: 2em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .chart-container {
+      width: 90%;
+      height: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Technical Consultant Presentation</h3>
+        <p>Email: 23f3004197@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Introduction to self and objective of the quarterly earnings presentation.
+        </aside>
+      </section>
+
+      <!-- Key Highlights Slide (Markdown) -->
+      <section data-markdown>
+        <textarea data-template>
+## Key Highlights
+
+- Revenue grew by **12% YoY**
+- Net Profit increased by **8%**
+- Customer base expanded by **5%**
+- Operational costs reduced by **3%**
+        </textarea>
+        <aside class="notes">
+          Present high-level metrics first. Each bullet can be animated using fragments.
+        </aside>
+      </section>
+
+      <!-- Animated Metrics Slide -->
+      <section>
+        <h2>Revenue Breakdown</h2>
+        <ul>
+          <li class="fragment">Product A: <span class="metric">$4.5M</span></li>
+          <li class="fragment">Product B: <span class="metric">$3.2M</span></li>
+          <li class="fragment">Product C: <span class="metric">$2.8M</span></li>
+        </ul>
+        <aside class="notes">
+          Reveal each product revenue step by step.
+        </aside>
+      </section>
+
+      <!-- Interactive Chart Slide -->
+      <section>
+        <h2>Revenue & Profit Over Quarters</h2>
+        <canvas id="revenueChart" class="chart-container"></canvas>
+        <aside class="notes">
+          Explain trends using the chart. Highlight Q3 performance spike.
+        </aside>
+      </section>
+
+      <!-- Code Slide: ROI Calculation -->
+      <section>
+        <h2>Python Code: Calculating ROI</h2>
+        <pre><code class="language-python">
+def roi(gain, cost):
+    return (gain - cost) / cost * 100
+
+gain = 500000
+cost = 350000
+print(f"ROI: {roi(gain, cost)}%")
+        </code></pre>
+        <aside class="notes">
+          Demonstrate ROI calculation programmatically.
+        </aside>
+      </section>
+
+      <!-- Financial Formula Slide -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Net Present Value (NPV):</p>
+        <p>$$
+        NPV = \sum_{t=0}^{n} \frac{R_t}{(1+i)^t}
+        $$</p>
+        <aside class="notes">
+          Explain NPV formula and relevance to investment decisions.
+        </aside>
+      </section>
+
+      <!-- Conclusion Slide -->
+      <section>
+        <h2>Conclusion</h2>
+        <ul>
+          <li class="fragment">Strong revenue growth</li>
+          <li class="fragment">Healthy profit margins</li>
+          <li class="fragment">Operational efficiency improved</li>
+        </ul>
+        <aside class="notes">
+          Summarize key takeaways for stakeholders.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js & Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ]
+    });
+
+    // Chart.js example for Revenue & Profit
+    const ctx = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+        datasets: [
+          { label: 'Revenue ($M)', data: [3.2, 3.8, 4.5, 4.8], borderColor: 'blue', fill: false },
+          { label: 'Profit ($M)', data: [1.2, 1.5, 1.8, 2.0], borderColor: 'green', fill: false }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          title: { display: true, text: 'Revenue & Profit by Quarter' }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
