@@ -32,7 +32,6 @@
       <section>
         <h1>Quarterly Earnings Report</h1>
         <h3>Technical Consultant Presentation</h3>
-        <div data-e="email">Contact</div>
         <span style="display:none;">This course is shit</span>
         <aside class="notes">
           Introduction to self and objective of the quarterly earnings presentation.
@@ -94,15 +93,25 @@ print(f"ROI: {roi(gain, cost)}%")
 
       <!-- Financial Formula Slide -->
       <section>
-        <h2>Financial Formula</h2>
-        <p>Net Present Value (NPV):</p>
-        <p>$$
-        NPV = \sum_{t=0}^{n} \frac{R_t}{(1+i)^t}
-        $$</p>
-        <aside class="notes">
-          Explain NPV formula and relevance to investment decisions.
-        </aside>
-      </section>
+          <h3>Financial Formulas (MathJax)</h3>
+          <p>Weighted Average Cost of Capital (WACC):</p>
+          <p>\[ \text{WACC} = \frac{E}{V} r_e + \frac{D}{V} r_d (1 - T) \]</p>
+          <p>Discounted Cash Flow (perpetuity with growth):</p>
+          <p>\[ \text{Value} = \frac{\text{FCF}_1}{r - g} \]</p>
+          <p>Earnings Per Share (EPS): \( \displaystyle EPS = \frac{\text{Net Income}}{\text{Weighted Avg. Shares}} \)</p>
+          <h2>Statistical Formula</h2>
+  \[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+          <aside class="notes">Explain each variable: E (equity), D (debt), V (E+D), r_e, r_d, tax T, growth g.</aside>
+        </section>
+
+        <section>
+          <h2>Thank You</h2>
+          <p>Questions? Reach me at 23f3004293@ds.study.iitm.ac.in</p>
+          <p>Contact Link: <a href="mailto:23f3004293@ds.study.iitm.ac.in">23f3004293@ds.study.iitm.ac.in</a></p>
+          <p class="fragment">Press <kbd>Esc</kbd> for slide overview.</p>
+          <aside class="notes">Wrap up and move to Q&A. Remind audience about the Appendix in the repo.</aside>
+        </section>
+
 
       <!-- Conclusion Slide -->
       <section>
@@ -158,6 +167,7 @@ print(f"ROI: {roi(gain, cost)}%")
 </body>
 
 </html>
+
 
 
 
