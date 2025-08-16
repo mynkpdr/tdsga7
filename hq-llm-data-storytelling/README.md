@@ -21,7 +21,7 @@ This significant gap of **7.84 percentage points** highlights a performance issu
 
 The quarterly data reveals a story of two halves. After modest growth in the first half of the year, a significant jump occurred in Q3, which then completely flatlined in Q4.
 
-![Image of bar chart showing 2024 quarterly MRR growth](mrr_growth_analysis.png)
+![Image showing 2024 quarterly MRR growth](mrr_growth_analysis.png)
 
 ### Key Findings 📊
 
