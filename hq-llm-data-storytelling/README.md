@@ -21,7 +21,7 @@ This significant gap of **7.84 percentage points** highlights a performance issu
 
 The quarterly data reveals a story of two halves. After modest growth in the first half of the year, a significant jump occurred in Q3, which then completely flatlined in Q4.
 
-![Image of bar chart showing 2024 quarterly MRR growth](mrr_growth_analysis.png)
+![Image showing 2024 quarterly MRR growth](mrr_growth_analysis.png)
 
 ### Key Findings 📊
 
@@ -65,3 +65,6 @@ Before committing to a full-scale launch, we should run a lean pilot program in 
 * **Build Case Studies:** Create powerful social proof and marketing assets that will be crucial for a wider launch.
 
 By strategically expanding into new markets, we can break through our current growth ceiling and build a more
+
+
+Email for verification: 23f3004197@ds.study.iitm.ac.in
